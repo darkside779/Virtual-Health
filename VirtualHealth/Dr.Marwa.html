@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Doctor Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #e0f7e9;
+            border-radius: 10px;
+        }
+        .doctor-card {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+        .doctor-card .pic {
+            flex: 1 1 200px;
+            background: #f8f8f8;
+            padding: 1rem;
+        }
+        .doctor-card .pic img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .doctor-card .member-info {
+            padding: 1.5rem;
+            flex: 2 1 600px;
+        }
+        .doctor-card h4 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: #1abc9c;
+        }
+        .doctor-card span {
+            display: block;
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        .doctor-card p {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .doctor-card .social {
+            margin-top: 1.5rem;
+        }
+        .doctor-card .social a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-right: 0.5rem;
+            background-color: #1abc9c;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+        }
+        .doctor-card .social a:hover {
+            background-color: #149279;
+        }
+        
+        /* تحسين التوافق مع الشاسات المختلفه */
+
+        /* تصميم للعرض على الشاشات الأصغر (الأجهزة اللوحية والهواتف الذكية) */
+
+        @media (max-width: 768px) {
+            .doctor-card {
+                flex-direction: column;
+                align-items: center;
+            }
+            .doctor-card .pic {
+                flex: none;
+                width: 100%;
+                text-align: center;
+            }
+            .doctor-card .pic img {
+                max-width: 80%;
+            }
+            .doctor-card .member-info {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        /* تصميم للشاشات الأصغر جداً (الهاتف المحمول) */
+        
+        @media (max-width: 480px) {
+            .doctor-card h4 {
+                font-size: 1.25rem;
+            }
+            .doctor-card span {
+                font-size: 1rem;
+            }
+            .doctor-card p {
+                font-size: 0.9rem;
+            }
+            .doctor-card .social a {
+                width: 25px;
+                height: 25px;
+                line-height: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="doctor-card">
+            <div class="pic">
+                <img src="images/d7.jpg" alt="Dr. Sara Abdalrhman">
+            </div>
+            <div class="member-info">
+                <h4>Marwa Khaled</h4>
+                <span><strong>Ophthalmologist</strong></span>
+                <p>Dr. Marwa Khaled is a distinguished ophthalmologist with extensive experience in the field of eye care. She graduated from a leading medical university, where she received comprehensive training in diagnosing and treating various eye conditions. Dr. Khaled is known for her meticulous approach and deep commitment to delivering exceptional patient care, with a focus.</p>
+                <br>
+                <p><strong>Experience and Expertise:</strong><br>
+                    - Over 5 years of experience in ophthalmology
+                    - Advanced expertise in diagnosing and treating a wide range of eye diseases, including retinal issues, glaucoma, and cataracts.<br>
+                    - Skilled in performing precise surgical procedures and providing advanced medical consultations.<br>
+                    - Dedicated to offering personalized care that addresses each patient’s unique needs.
+                <br>
+                <br>
+                <p><strong>Professional Philosophy:</strong><br>
+                    Dr. Marwa Khaled believes in providing customized medical care that prioritizes eye health and visual quality. She emphasizes effective communication with patients to understand their needs and develop tailored treatment plans. Dr. Khaled is committed to continuous learning and staying updated with the latest research and advancements in ophthalmology to ensure the highest level of care.</p>
+                <br>
+                <p><strong>Achievements:</strong><br>
+                    - Authored research papers and specialized articles in the field of ophthalmology.<br>
+                    - Active member of specialized ophthalmological organizations.<br>
+                    - Regularly presents lectures and workshops on the latest developments in ophthalmology.
+                    </p>
+                <br>
+                <p><strong>Personal Interests:</strong><br>
+                    In her spare time, Dr. Khaled enjoys activities that promote overall health, such as reading and participating in health-related events. She is passionate about staying abreast of the latest advancements in ophthalmology and helping patients achieve optimal visual health.</p>
+                <div class="social">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

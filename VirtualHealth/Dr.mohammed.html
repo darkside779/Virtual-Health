@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Doctor Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #e0f7e9;
+            border-radius: 10px;
+        }
+        .doctor-card {
+            display: flex;
+            align-items: flex-start;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+        .doctor-card .pic {
+            flex: 0 0 200px;
+            background: #f8f8f8;
+            padding: 1rem;
+        }
+        .doctor-card .pic img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .doctor-card .member-info {
+            padding: 1.5rem;
+            flex: 1;
+        }
+        .doctor-card h4 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: #1abc9c;
+        }
+        .doctor-card span {
+            display: block;
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        .doctor-card p {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .doctor-card .social {
+            margin-top: 1.5rem;
+        }
+        .doctor-card .social a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-right: 0.5rem;
+            background-color: #1abc9c;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+        }
+        .doctor-card .social a:hover {
+            background-color: #149279;
+        }
+
+ /* تحسين التوافق مع الشاسات المختلفه */
+
+        /* تصميم للعرض على الشاشات الأصغر (الأجهزة اللوحية والهواتف الذكية) */
+
+        @media (max-width: 768px) {
+            .doctor-card {
+                flex-direction: column;
+                align-items: center;
+            }
+            .doctor-card .pic {
+                flex: none;
+                width: 100%;
+                text-align: center;
+            }
+            .doctor-card .pic img {
+                max-width: 80%;
+            }
+            .doctor-card .member-info {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        /* تصميم للشاشات الأصغر جداً (الهاتف المحمول) */
+        
+        @media (max-width: 480px) {
+            .doctor-card h4 {
+                font-size: 1.25rem;
+            }
+            .doctor-card span {
+                font-size: 1rem;
+            }
+            .doctor-card p {
+                font-size: 0.9rem;
+            }
+            .doctor-card .social a {
+                width: 25px;
+                height: 25px;
+                line-height: 25px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="doctor-card">
+            <div class="pic">
+                <img src="images/d2.jpg" alt="Dr. Mohammed Ahmed">
+            </div>
+            <div class="member-info">
+                <h4>Dr. Mohammed Ahmed</h4>
+                <span><strong>Internal Medicine</strong></span>
+                <p>Dr. Mohammed Ahmed is a highly experienced physician specializing in internal medicine. He graduated from the University of Khartoum, where he received extensive training in diagnosing and treating a wide range of internal medical conditions. Dr. Ahmed is known for his holistic approach to patient care, combining thorough diagnostics with personalized treatment plans. He has a strong background in managing chronic diseases such as diabetes, hypertension, and heart disease, as well as acute illnesses.</p>
+                <br>
+                <p><strong>Experience and Expertise:</strong><br>
+                - Over 15 years of experience in internal medicine.<br>
+                - Expertise in managing complex medical conditions and multi-system diseases.<br>
+                - Skilled in preventive care and health promotion strategies.<br>
+                - Committed to patient-centered care and effective communication.</p>
+                <br>
+                <p><strong>Professional Philosophy:</strong><br>
+                Dr. Ahmed believes in a comprehensive approach to healthcare, emphasizing the importance of understanding each patient’s unique needs and working collaboratively to achieve optimal health outcomes. He values continuous learning and staying updated with the latest medical advancements to provide the best possible care.</p>
+                <br>
+                <p><strong>Achievements:</strong><br>
+                - Published numerous research articles in reputable medical journals.<br>
+                - Active member of several professional medical societies.<br>
+                - Regular speaker at medical conferences and seminars on internal medicine.</p>
+                <br>
+                <p><strong>Personal Interests:</strong><br>
+                Outside of his medical practice, Dr. Ahmed enjoys reading, traveling, and participating in community health initiatives. He is dedicated to promoting wellness and educating the public about healthy lifestyle choices.</p>
+                <div class="social">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
