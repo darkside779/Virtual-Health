@@ -1,0 +1,167 @@
+.doctor_section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+  }
+
+  .heading_container h2 {
+    font-size: 36px;
+    color: #209677;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .heading_container p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 40px;
+    line-height: 1.8;
+  }
+
+  /* Doctor Section Styling */
+  .doctor_section {
+    padding: 60px 0;
+    background-color: #e6fff9;
+  }
+
+  .heading_container h2 {
+    font-size: 36px;
+    color: #209677;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .heading_container p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 40px;
+    line-height: 1.8;
+  }
+
+  /* Doctor Box Styling */
+  .doctor_section .box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+    flex: 1;
+    margin-right: 10px;
+    /* Space between boxes */
+  }
+
+  .doctor_section .box:last-child {
+    margin-right: 0;
+    /* Remove margin from the last box */
+  }
+
+  .doctor_section .box:hover {
+    transform: translateY(-10px);
+  }
+
+  .doctor_section .img-box {
+    margin-bottom: 20px;
+  }
+
+  .doctor_section .img-box img {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 150px;
+    border: 4px solid #f1f1f1;
+  }
+
+  .doctor_section .detail-box h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  .doctor_section .detail-box h6 {
+    font-size: 16px;
+    color: #777;
+    font-weight: 500;
+  }
+
+  /* Social Icons Styling */
+  .doctor_section .social_box {
+    margin: 15px 0;
+  }
+
+  .doctor_section .social_box a {
+    color: #333;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+
+  .doctor_section .social_box a:hover {
+    color: #209677;
+  }
+
+  /* Button Styling */
+  .doctor_section .btn-box {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .doctor_section .btn-box a {
+    background: #209677;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+
+  .doctor_section .btn-box a:hover {
+    background: #003c2c;
+  }
+
+  /* Arrange doctors in a single row */
+  .doctor_section .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 768px) {
+    .doctor_section .box {
+      margin-right: 0;
+      margin-bottom: 20px;
+      flex: 1 0 45%;
+      /* Two boxes per row on medium screens */
+    }
+  }
+
+  @media (max-width: 576px) {
+    .doctor_section .heading_container h2 {
+      font-size: 28px;
+    }
+
+    .doctor_section .heading_container p {
+      font-size: 14px;
+    }
+
+    .doctor_section .box {
+      flex: 1 0 100%;
+      /* One box per row on small screens */
+    }
+  }
+
+  /* Social Icons Styling */
+  .social-links {
+    margin: 15px 0;
+  }
+
+  .social-links a {
+    color: #209677;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+
+  .social-links a:hover {
+    color: #06ee1d;
+  }

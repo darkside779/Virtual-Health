@@ -1,0 +1,52 @@
+#medicines-slider-section {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+
+  #medicines-slider-section h2 {
+    font-size: 28px;
+    color: #209677;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  .medicines-slider {
+    overflow: hidden;
+    position: relative;
+    height: 60px;
+  }
+
+  .medicines-slider ul {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .medicines-slider li {
+    flex: none;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #91f2d8;
+    margin-right: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
