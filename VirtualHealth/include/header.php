@@ -12,6 +12,6 @@
       <!-- عشان يفتح لينا الرساله JavaScript عرفنا الزر في  -->
       <button class="btn" onclick="window.location.href='P-R.html'">Login</button>
       
-      <button class="btn" onclick="window.location.href='register.php'">Register</button>
+      <button class="btn" onclick="window.location.href='P-R_r.html'">Register</button>
     </nav>
   

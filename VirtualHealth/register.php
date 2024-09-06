@@ -84,7 +84,7 @@ if (isset($_POST['signIn'])) {
     <link rel="shortcut icon" href="images/Home-logo2.jpg">
     <title>register</title>
 </head>
-<body><h1>Register</h1>
+<body><h1>Register as Patient</h1>
 <form method="post">
     <label for="firstName">First Name:</label>
     <input type="text" id="pfname" name="fName" placeholder="Enter First name" required>
